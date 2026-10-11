@@ -1,0 +1,29 @@
+{
+	"provideLibs": [	
+		    "libdummy_ext_guava-x86_64-v2.so",
+		    "libdummy_ext_guava.so",
+		    "libdummy_shared_checker-qual-x86_64-v2.so",
+		    "libdummy_shared_checker-qual.so",
+		    "libdummy_shared_checker_qual-x86_64-v2.so",
+		    "libdummy_shared_checker_qual.so",
+		    "libdummy_shared_guava-android-annotation-stubs-x86_64-v2.so",
+		    "libdummy_shared_guava-android-annotation-stubs.so",
+		    "libdummy_shared_guava-android-x86_64-v2.so",
+		    "libdummy_shared_guava-android.so",
+		    "libdummy_shared_guava-both-x86_64-v2.so",
+		    "libdummy_shared_guava-both.so",
+		    "libdummy_shared_guava-jre-x86_64-v2.so",
+		    "libdummy_shared_guava-jre.so",
+		    "libdummy_shared_guava-x86_64-v2.so",
+		    "libdummy_shared_guava.so",
+		    "libdummy_shared_guava_android-x86_64-v2.so",
+		    "libdummy_shared_guava_android.so",
+		    "libdummy_shared_guava_android_annotation_stubs-x86_64-v2.so",
+		    "libdummy_shared_guava_android_annotation_stubs.so",
+		    "libdummy_shared_guava_both-x86_64-v2.so",
+		    "libdummy_shared_guava_both.so",
+		    "libdummy_shared_guava_jre-x86_64-v2.so",
+		    "libdummy_shared_guava_jre.so"
+	],
+	"visible": true
+}

@@ -1,0 +1,40 @@
+// Extractive JVM/Maven apex: jars staged under share/ dirs
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+java_import {
+    name: "guava",
+    jars: ["share/guava/guava__guava-33.3.1-android.jar", "share/guava/guava__failureaccess-1.0.2.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "guava_android",
+    jars: ["share/guava-android/guava-android__guava-33.3.1-android.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "guava_android_annotation_stubs",
+    jars: ["share/guava-android-annotation-stubs/guava-android-annotation-stubs__guava-33.3.1-android.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "guava_both",
+    jars: ["share/guava-both/guava-both__guava-33.3.1-android.jar", "share/guava-both/guava-both__guava-33.3.1-jre.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "guava_jre",
+    jars: ["share/guava-jre/guava-jre__guava-33.3.1-jre.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "checker_qual",
+    jars: ["share/checker-qual/checker-qual__checker-qual-3.42.0.jar"],
+    host_supported: true,
+}
