@@ -6,15 +6,6 @@ package {
 }
 
 java_import {
-    name: "checker-qual",
-    jars: [
-        "src/share/checker-qual/checker-qual__checker-qual-3.42.0.jar",
-    ],
-    host_supported: true,
-    prefer: true,
-}
-
-java_import {
     name: "failureaccess",
     jars: [
         "src/share/guava/guava__failureaccess-1.0.2.jar",
