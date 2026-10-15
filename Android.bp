@@ -5,25 +5,8 @@ package {
     default_applicable_licenses: ["Android-Apache-2.0"],
 }
 
-cc_prebuilt_library_shared {
-    name: "libdummy_ext_guava",
-    vendor_available: true,
-    product_available: true,
-    recovery_available: true,
-    host_supported: true,
-    check_elf_files: false,
-    arch: {
-        x86_64: {
-            srcs: [
-                "src/lib/_libdummy.so",
-            ],
-        },
-    },
-    prefer: true,
-}
-
 java_import {
-    name: "checker_qual_checker_qual_3_42_0",
+    name: "checker-qual",
     jars: [
         "src/share/checker-qual/checker-qual__checker-qual-3.42.0.jar",
     ],
@@ -32,52 +15,7 @@ java_import {
 }
 
 java_import {
-    name: "guava_android_annotation_stubs_guava_33_3_1_android",
-    jars: [
-        "src/share/guava-android-annotation-stubs/guava-android-annotation-stubs__guava-33.3.1-android.jar",
-    ],
-    host_supported: true,
-    prefer: true,
-}
-
-java_import {
-    name: "guava_android_guava_33_3_1_android",
-    jars: [
-        "src/share/guava-android/guava-android__guava-33.3.1-android.jar",
-    ],
-    host_supported: true,
-    prefer: true,
-}
-
-java_import {
-    name: "guava_both_guava_33_3_1_android",
-    jars: [
-        "src/share/guava-both/guava-both__guava-33.3.1-android.jar",
-    ],
-    host_supported: true,
-    prefer: true,
-}
-
-java_import {
-    name: "guava_both_guava_33_3_1_jre",
-    jars: [
-        "src/share/guava-both/guava-both__guava-33.3.1-jre.jar",
-    ],
-    host_supported: true,
-    prefer: true,
-}
-
-java_import {
-    name: "guava_jre_guava_33_3_1_jre",
-    jars: [
-        "src/share/guava-jre/guava-jre__guava-33.3.1-jre.jar",
-    ],
-    host_supported: true,
-    prefer: true,
-}
-
-java_import {
-    name: "guava_failureaccess_1_0_2",
+    name: "failureaccess",
     jars: [
         "src/share/guava/guava__failureaccess-1.0.2.jar",
     ],
@@ -86,7 +24,7 @@ java_import {
 }
 
 java_import {
-    name: "guava_guava_33_3_1_android",
+    name: "guava",
     jars: [
         "src/share/guava/guava__guava-33.3.1-android.jar",
     ],
@@ -94,7 +32,39 @@ java_import {
     prefer: true,
 }
 
-prebuilt_etc {
-    name: "linker_config_json",
-    src: "etc/linker.config.json",
+java_import {
+    name: "guava-android",
+    jars: [
+        "src/share/guava-android/guava-android__guava-33.3.1-android.jar",
+    ],
+    host_supported: true,
+    prefer: true,
+}
+
+java_import {
+    name: "guava-android-annotation-stubs",
+    jars: [
+        "src/share/guava-android-annotation-stubs/guava-android-annotation-stubs__guava-33.3.1-android.jar",
+    ],
+    host_supported: true,
+    prefer: true,
+}
+
+java_import {
+    name: "guava-both",
+    jars: [
+        "src/share/guava-both/guava-both__guava-33.3.1-android.jar",
+        "src/share/guava-both/guava-both__guava-33.3.1-jre.jar",
+    ],
+    host_supported: true,
+    prefer: true,
+}
+
+java_import {
+    name: "guava-jre",
+    jars: [
+        "src/share/guava-jre/guava-jre__guava-33.3.1-jre.jar",
+    ],
+    host_supported: true,
+    prefer: true,
 }
